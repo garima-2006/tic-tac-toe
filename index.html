@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="player-names">
+            <input type="text" id="playerX" placeholder="Player X">
+            <input type="text" id="playerO" placeholder="Player O">
+            <button id="startGame">Start Game</button>
+        </div>
+        <div id="game-board" class="hidden">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="scoreboard" class="hidden">
+            <h2>SCORE BOARD</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Wins</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td id="playerXName">-</td>
+                        <td id="playerXWins">0</td>
+                        <td><button id="playAgainX">Play Again</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="playerOName">-</td>
+                        <td id="playerOWins">0</td>
+                        <td><button id="playAgainO">Play Again</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <audio id="tingSound" src="ting.mp3"></audio>
+    <audio id="gameoversound" src="game over.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
